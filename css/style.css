@@ -30,8 +30,15 @@ body {
     outline: 1px dashed tomato;
 }
 
-.navigation-list {
+.margin-bottom {
+    margin-bottom: 66px;
+}
+
+.margin-top {
     margin-top: 71px;
+}
+
+.navigation-list {
     margin-bottom: 92px;
 }
 
@@ -59,11 +66,16 @@ body {
     margin-right: 65px;
 }
 
+.galery-item:nth-last-child(-n+2) {
+    margin-bottom: 90px;
+}
+
 .galery-img {
     margin-bottom: 65px;
 }
 
 .galery-link {
+    display: block;
     margin-bottom: 32px;
     font-family: var(--second-family);
     font-weight: 300;
@@ -83,7 +95,7 @@ body {
     display: block;
     width: 165px;
     height: 60px;
-    margin: 0 auto 66px;
+    margin: 0 auto;
     font-family: var(--font-family); 
     font-size: 14px;
     color: var(--main-color); 
