@@ -1,0 +1,17 @@
+@mixin margin-bottom {
+    margin-bottom: 66px;
+}
+
+@mixin margin-top {
+    margin-top: 71px;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}

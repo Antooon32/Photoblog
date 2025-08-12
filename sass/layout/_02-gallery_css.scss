@@ -1,0 +1,43 @@
+.galery-list {
+    column-gap: 65px;
+    row-gap: 130px;
+    margin-bottom: 90px;
+    outline: 1px solid red;
+}
+
+.galery-item {
+    width: 420px;
+    height: 546px;
+    outline: 1px dotted blue;
+}
+
+.galery-img {
+    margin-bottom: 65px;
+}
+
+.galery-link {
+    display: block;
+    margin-bottom: 32px;
+    font-family: var(--second-family);
+    font-weight: 300;
+    color: var(--second-color);
+}
+
+.galery-link:hover {
+    color: var(--active-link-color);
+}
+
+.galery-title {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.galery-button {
+    display: block;
+    width: 165px;
+    height: 60px;
+    margin: 0 auto;
+    font-family: var(--font-family); 
+    font-size: 14px;
+    color: var(--main-color); 
+}
