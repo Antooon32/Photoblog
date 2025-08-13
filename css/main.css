@@ -31,6 +31,15 @@ img {
   height: auto;
 }
 
+:root {
+  --active-link-color: #03a9f4;
+  --link-color: #7d7d7d;
+  --main-color: #626262;
+  --second-color: #b4ad9e;
+  --font-family: "Playfair Display", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+}
+
 body {
   font-family: var(--font-family);
   color: var(--main-color);
@@ -62,12 +71,12 @@ body {
 }
 
 .navigation-link {
-  font-family: getFont("font-family");
-  color: getColor("link-color");
+  font-family: "Playfair Display";
+  color: #7d7d7d;
 }
 
 .navigation-link:hover {
-  color: getColor("active-link-color");
+  color: #03a9f4;
 }
 
 .margin-bottom {
@@ -108,13 +117,13 @@ body {
 .galery-link {
   display: block;
   margin-bottom: 32px;
-  font-family: getFont("second-family");
+  font-family: "Ubuntu";
   font-weight: 300;
-  color: getColor("second-color");
+  color: #b4ad9e;
 }
 
 .galery-link:hover {
-  color: getColor("active-link-color");
+  color: #03a9f4;
 }
 
 .galery-title {
@@ -127,16 +136,7 @@ body {
   width: 165px;
   height: 60px;
   margin: 0 auto;
-  font-family: getFont("font-family");
+  font-family: "Playfair Display";
   font-size: 14px;
-  color: getColor("main-color");
-}
-
-:root {
-  --active-link-color: #03a9f4;
-  --link-color: #7d7d7d;
-  --main-color: #626262;
-  --second-color: #b4ad9e;
-  --font-family: "Playfair Display", sans-serif;
-  --second-family: "Ubuntu", sans-serif;
+  color: #626262;
 }/*# sourceMappingURL=main.css.map */
