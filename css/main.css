@@ -62,81 +62,58 @@ body {
   color: var(--main-color);
 }
 
-.navigation-list {
-  margin-bottom: 92px;
+.header {
+  outline: 1px solid red;
 }
-
-.navigation-item:not(:last-child) {
-  margin-right: 100px;
-}
-
-.navigation-link {
-  font-family: "Playfair Display";
-  color: #7d7d7d;
-}
-
-.navigation-link:hover {
-  color: #03a9f4;
-}
-
-.margin-bottom {
-  margin-bottom: 66px;
-}
-
-.margin-top {
+.header .container {
   margin-top: 71px;
 }
-
-.flex {
+.header .container .navigation-list {
+  margin-bottom: 92px;
   display: flex;
   justify-content: center;
 }
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.header .container .navigation-list__item:not(:last-child) {
+  margin-right: 100px;
+}
+.header .container .navigation-list__link {
+  font-family: "Playfair Display";
+  color: #7d7d7d;
+}
+.header .container .navigation-list__link:hover {
+  color: #03a9f4;
 }
 
-.galery-list {
+.container {
+  margin-bottom: 66px;
+}
+.container .galery-list {
   column-gap: 65px;
   row-gap: 130px;
   margin-bottom: 90px;
   outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.galery-item {
+.container .galery-list__item {
   width: 420px;
   height: 546px;
   outline: 1px dotted blue;
 }
-
-.galery-img {
+.container .galery-list__img {
   margin-bottom: 65px;
 }
-
-.galery-link {
+.container .galery-list__link {
   display: block;
   margin-bottom: 32px;
   font-family: "Ubuntu";
   font-weight: 300;
   color: #b4ad9e;
 }
-
-.galery-link:hover {
+.container .galery-list__link:hover {
   color: #03a9f4;
 }
-
-.galery-title {
+.container .galery-list__title {
   margin-bottom: 40px;
   font-size: 30px;
-}
-
-.galery-button {
-  display: block;
-  width: 165px;
-  height: 60px;
-  margin: 0 auto;
-  font-family: "Playfair Display";
-  font-size: 14px;
-  color: #626262;
 }/*# sourceMappingURL=main.css.map */

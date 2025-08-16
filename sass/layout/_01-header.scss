@@ -1,34 +1,27 @@
-.navigation-list {
-    margin-bottom: 92px;
-}
+.header {
+    outline: 1px solid red;
 
-.navigation-item:not(:last-child) {
-    margin-right: 100px;
-}
+    .container {
+        @include margin-top;
 
-.navigation-link {
-    font-family: getFont('font-family');
-    color: getColor('link-color');
-}
+        .navigation-list {
+            margin-bottom: 92px;
+            @include flex;
 
-.navigation-link:hover {
-    color: getColor('active-link-color');
-}
+            &__item {
+                &:not(:last-child) {
+                    margin-right: 100px;
+                }
+            }
 
-.margin-bottom {
-    margin-bottom: 66px;
-}
+            &__link {
+                font-family: getFont("font-family");
+                color: getColor("link-color");
 
-.margin-top {
-    margin-top: 71px;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
+                &:hover {
+                    color: getColor("active-link-color");
+                }
+            }
+        }
+    }
 }
