@@ -15,3 +15,34 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@mixin button($width, $height, $font-size){
+    display: block;
+    font-family: getFont('font-family');
+    color: getColor('main-color');
+    width: $width;
+    height: $height;
+    font-size: $font-size; 
+}
+
+//! ----------- SASS-outline міксін  -----------
+// outline: 1px solid tomato;
+
+//todo  міксін var.1
+// @mixin o($size, $type, $color) {
+//     outline: $size $type $color;
+// }
+
+//todo міксін var.2  
+@mixin outline($size: 1px, $type: solid, $color: red) {
+    outline: $size $type $color;
+}
+
+@mixin galleryItemBackgroundColor($colors) {
+    @each $color in $colors {
+        &__item--#{$color} {
+            background-color: #{$color};
+        }
+    }
+
+}

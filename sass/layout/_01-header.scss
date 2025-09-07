@@ -1,16 +1,44 @@
 .header {
-    outline: 1px solid red;
+    // outline: 1px solid red;
+    // @include outline(1px, solid, red);
+
+    //! SASS-outline - міксін var.1 
+    // @include outline(3px, dotted, tomato);
+
+    //! SASS-outline міксін var.2 
+    @include outline;
+
+
 
     .container {
         @include margin-top;
 
         .navigation-list {
-            margin-bottom: 92px;
-            @include flex;
+            display: none;
+            // margin-bottom: 92px;
+            // @include flex;
+            // column-gap: 100px;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 92px;
+                @include flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                row-gap: 10px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                flex-wrap: nowrap;
+            }
 
             &__item {
-                &:not(:last-child) {
-                    margin-right: 100px;
+                display: flex;
+                justify-content: center;
+                @media screen and (min-width: 768px) {
+                    width: calc(100% / 2);
+                }
+                @media screen and (min-width: 1200px) {
+                    width: calc(100% / 4);
                 }
             }
 

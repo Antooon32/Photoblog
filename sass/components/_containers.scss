@@ -1,5 +1,30 @@
+// .container {
+//     width: 906px;
+//     margin: 0 auto;
+//     outline: 1px dashed tomato;
+// }
+
+//? Найпростіший варіант
 .container {
-    width: 906px;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 30px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    outline: 1px solid tomato;
+    
+    //! Медіа-запити
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        outline: 1px solid green;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        outline: 1px solid blue;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        outline: 1px solid yellow;
+    }
 }

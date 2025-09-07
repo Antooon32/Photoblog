@@ -47,19 +47,35 @@ body {
 }
 
 .container {
-  width: 906px;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
-  outline: 1px dashed tomato;
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    outline: 1px solid green;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    outline: 1px solid blue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    outline: 1px solid yellow;
+  }
 }
 
-.galery-button {
+.button {
   display: block;
-  width: 165px;
-  height: 60px;
-  margin: 0 auto;
-  font-family: var(--font-family);
-  font-size: 14px;
-  color: var(--main-color);
+  font-family: "Playfair Display";
+  color: #626262;
 }
 
 .header {
@@ -69,12 +85,36 @@ body {
   margin-top: 71px;
 }
 .header .container .navigation-list {
-  margin-bottom: 92px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header .container .navigation-list {
+    margin-bottom: 92px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .container .navigation-list {
+    flex-wrap: nowrap;
+  }
+}
+.header .container .navigation-list__item {
   display: flex;
   justify-content: center;
 }
-.header .container .navigation-list__item:not(:last-child) {
-  margin-right: 100px;
+@media screen and (min-width: 768px) {
+  .header .container .navigation-list__item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .container .navigation-list__item {
+    width: 25%;
+  }
 }
 .header .container .navigation-list__link {
   font-family: "Playfair Display";
@@ -84,36 +124,92 @@ body {
   color: #03a9f4;
 }
 
-.container {
+.galery .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 66px;
 }
-.container .galery-list {
-  column-gap: 65px;
-  row-gap: 130px;
+.galery .container .galery-list {
+  row-gap: 65px;
   margin-bottom: 90px;
   outline: 1px solid red;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
-.container .galery-list__item {
-  width: 420px;
-  height: 546px;
+@media screen and (min-width: 768px) {
+  .galery .container .galery-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 65px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galery .container .galery-list {
+    row-gap: 130px;
+  }
+}
+.galery .container .galery-list__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
   outline: 1px dotted blue;
 }
-.container .galery-list__img {
+@media screen and (min-width: 768px) {
+  .galery .container .galery-list__item {
+    width: calc((100% - 65px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galery .container .galery-list__item {
+    width: calc((100% - 130px) / 3);
+  }
+}
+.galery .container .galery-list__item--red {
+  background-color: red;
+}
+.galery .container .galery-list__item--green {
+  background-color: green;
+}
+.galery .container .galery-list__item--blue {
+  background-color: blue;
+}
+.galery .container .galery-list__item--white {
+  background-color: white;
+}
+.galery .container .galery-list__item--yellow {
+  background-color: yellow;
+}
+.galery .container .galery-list__item--orange {
+  background-color: orange;
+}
+.galery .container .galery-list__img {
   margin-bottom: 65px;
 }
-.container .galery-list__link {
+.galery .container .galery-list__link {
   display: block;
   margin-bottom: 32px;
   font-family: "Ubuntu";
   font-weight: 300;
   color: #b4ad9e;
 }
-.container .galery-list__link:hover {
+.galery .container .galery-list__link:hover {
   color: #03a9f4;
 }
-.container .galery-list__title {
+.galery .container .galery-list__title {
+  flex-grow: 1;
   margin-bottom: 40px;
   font-size: 30px;
+}
+.galery .container .galery-button {
+  display: block;
+  font-family: "Playfair Display";
+  color: #626262;
+  width: 165px;
+  height: 60px;
+  font-size: 14px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

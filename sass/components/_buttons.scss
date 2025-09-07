@@ -1,9 +1,5 @@
-.galery-button {
+.button{
     display: block;
-    width: 165px;
-    height: 60px;
-    margin: 0 auto;
-    font-family: var(--font-family); 
-    font-size: 14px;
-    color: var(--main-color); 
+    font-family: getFont('font-family');
+    color: getColor('main-color'); 
 }
